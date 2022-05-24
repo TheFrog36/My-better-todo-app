@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #303060;
+    color: #303060;
+}
+
+.page-container{
+    background-color: rgb(255, 247, 242);
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    height: 100%;
+    padding-top: 70px;
+}
+
+.header{
+    position: fixed;
+    top: 0px;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(177, 177, 250);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.title{
+
+}
+
+.reload-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tasks-container{
+    background-color: rgb(255, 249, 245);
+    height: 100%;
+    padding-top: 70px;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    padding: 18px;
+}
+
+.task-card{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(255, 249, 245);
+    margin-bottom: 18px;
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+    box-shadow: 6px 9px 15px -6px #000000;
+}
+
+.task-content{
+    height: fit-content;
+    flex-grow: 1;
+    background-color: bisque;
+    
+}
+
+.task-title-container{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    background-color: white;
+    width: 100%;
+    align-items: center;
+    padding: 8px;
+}
+
+.left-title-container{
+
+}
+
+.task-title{
+
+}
+
+.title-check{
+
+}
+
+.right-title-container{
+
+}
+
+.edit-button{
+
+}
+
+.delete-button{
+
+
+}
+
+.separation-line{
+    height: 2px;
+    width: 100%;
+    background-color: #303060;
+    border-radius: 1px;
+}
+
+.tags-container{
+   
+}
+
+.tag{
+    display: inline-block;
+    height: 25px; 
+    padding-top: 3px;
+    margin-left: 8px;
+    align-items: center;
+}
+
+.date-container{
+    background-color: darkorange;
+    height: 30px;
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    font-size: small;
+}
+
+.priority-container{
+    /* background-color: red; */
+    width: 4px;
+    border-radius: 2px;
+}
+
+
+
+.add-task-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 8px;
+    bottom: 8px;
+}
