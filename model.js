@@ -76,7 +76,7 @@ class ToDo {
         const year = dateNumber.getFullYear()
         const month = dateNumber.getMonth()
         const day = dateNumber.getDate()
-        const mesi = ['gennaio' , 'febbraio' , 'marzo' , 'aprile',' maggio', ' maggio', 'giugno' , 'luglio' , 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre']
+        const mesi = ['gennaio' , 'febbraio' , 'marzo' , 'aprile','maggio', , 'giugno' , 'luglio' , 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre']
         return day + '/' + mesi[month] + '/' + year
     }
     static getFormattedDate(date){

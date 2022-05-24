@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
 button{
     background-color: transparent;
     border: none;
@@ -13,23 +15,27 @@ html, body {
     margin: 0px;
     background-color: #303060;
     color: #303060;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(246, 255, 247);
 }
 
 .page-container{
-    background-color: rgb(255, 247, 242);
+    background-color: #EFF6E0;
     width: 100%;
     max-width: 800px;
     margin: auto;
     height: 100%;
     padding-top: 70px;
+    position: relative;
 }
 
 .header{
-    position: fixed;
+    color: #EFF6E0;
+    position: absolute;
     top: 0px;
     height: 70px;
     width: 100%;
-    background-color: rgb(177, 177, 250);
+    background-color: #01161E;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,17 +43,19 @@ html, body {
 }
 
 .title{
-
+    padding-left: 16px;
+    font-size: large;
 }
 
 .reload-button{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 #tasks-container{
-    background-color: rgb(255, 249, 245);
+    background-color: #EFF6E0;
     height: 100%;
     padding-top: 70px;
     height: 100%;
@@ -57,9 +65,10 @@ html, body {
 }
 
 .task-card{
+    border-radius: 8px;
     width: 100%;
     height: fit-content;
-    background-color: rgb(255, 249, 245);
+    background-color: #01161E;
     margin-bottom: 18px;
     display: flex;
     gap: 8px;
@@ -70,72 +79,90 @@ html, body {
 .task-content{
     height: fit-content;
     flex-grow: 1;
-    background-color: bisque;
-    
 }
 
 .task-title-container{
+    border-radius:  8px 8px 0px 0px;
+    background-color: #124559;
     display: flex;
     justify-content: space-between;
     height: 40px;
-    background-color: white;
     width: 100%;
     align-items: center;
     padding: 8px;
+    padding-top: 2px;
+    padding-bottom: 0px;
 }
 
 .left-title-container{
-
+    display: flex;
+    gap: 4px;
 }
 
 .task-title{
-
+    padding-top: 4px;
 }
 
-.title-check{
-
+.done-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .right-title-container{
+    display: flex;
 
 }
 
 .edit-button{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .delete-button{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .separation-line{
     height: 2px;
     width: 100%;
-    background-color: #303060;
-    border-radius: 1px;
+    background-color: #01161E;
 }
 
 .tags-container{
-   
+   background-color: #598392;
 }
 
 .tag{
+    color: #01161E;
+    background-color: #EFF6E0;
+    border-radius: 4px;
     display: inline-block;
     height: 25px; 
     padding-top: 3px;
     margin-left: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
     align-items: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .date-container{
-    background-color: darkorange;
+    background-color: #AEC3B0;
     height: 30px;
     width: 100%;
     padding: 8px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     display: flex;
     align-items: center;
     font-size: small;
+    border-radius: 0px 0px 8px 8px;
 }
 
 .priority-container{
@@ -147,6 +174,9 @@ html, body {
 
 
 .add-task-button{
+    border: 2px #01161E solid;
+    border-radius: 50%;
+    background-color: #EFF6E0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,4 +185,8 @@ html, body {
     position: fixed;
     right: 8px;
     bottom: 8px;
+}
+
+.svg{
+    filter: invert(92%) sepia(1%) saturate(5627%) hue-rotate(39deg) brightness(110%) contrast(91%);
 }
