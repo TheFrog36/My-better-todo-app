@@ -81,7 +81,7 @@ function populateTagContainer(container, tags) {
     for (const tag of tags) {
         const div = document.createElement('div');
         div.classList.add('tag');
-        const node = document.createTextNode('#' + tag);
+        const node = document.createTextNode(tag);
         div.appendChild(node);
         container.appendChild(div)
     }
