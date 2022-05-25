@@ -11,8 +11,11 @@
     <div class="page-container">
         <header class="header">
             <div class="title">Todo App</div>
-            <img id="loader" style="display: none;" src="./assets/loading.gif" width="30px" >
-            <button id="refresh-button" class="reload-button" onclick="loadTodos()"><img src="./assets/loader.svg" alt="" width="30px" class="svg"></button>
+            <div class="right-side-header">
+                <button><img src="./assets/swap.svg" height="25px" class="svg" onclick="inverArray()"></button>
+                <img id="loader" style="display: none;" src="./assets/loading.gif" width="30px" >
+                <button id="refresh-button" class="reload-button" onclick="loadTodos()"><img src="./assets/loader.svg" alt="" width="30px" class="svg"></button>
+            </div>
         </header>
         <div id="tasks-container">
             

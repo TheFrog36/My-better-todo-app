@@ -8,6 +8,7 @@ template = `
             <div class="task-title">#TITLE</div>
             <button class="edit-button"><img src="./assets/done.svg" height="25" class="svg"></button>
         </div>
+        
         <div class="right-title-container">
             <button class="edit-button"><img src="./assets/edit.svg" height="25" class="svg"></button>
             <button class="delete-button"><img src="./assets/delete.svg" height="25" class="svg"></button>
@@ -73,11 +74,10 @@ function display(tasks) {
         populateTagContainer(tagsContainer, task.tags)
         taskContainer.appendChild(todoCard)
     }
-
 }
 
 function populateTagContainer(container, tags) {
-    
+
     for (const tag of tags) {
         const div = document.createElement('div');
         div.classList.add('tag');
@@ -128,5 +128,10 @@ function filterTodos(t1, t2) {
 function confirmDeletion(id){
     const answer = prompt("Type 'yes' to confirm deletion of the task")
     if(answer === 'yes') deleteTodo(id)
+}
+
+function inverArray(){
+    toDoList.reverse()
+    display(toDoList)
 }
 loadTodos()
