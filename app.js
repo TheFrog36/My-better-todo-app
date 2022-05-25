@@ -9,9 +9,9 @@ template = `
             </div>
             
             <div class="right-title-container">
-            <button class="done-button"><img src="./assets/done.svg" height="25" class="svg"></button>
-            <button class="edit-button"><img src="./assets/edit.svg" height="25" class="svg"></button>
             <button class="delete-button"><img src="./assets/delete.svg" height="25" class="svg"></button>
+            <button class="edit-button"><img src="./assets/edit.svg" height="25" class="svg"></button>
+            <button class="done-button"><img src="./assets/done.svg" height="25" class="svg"></button>
         </div>
     </div>
     <div class="separation-line"></div>

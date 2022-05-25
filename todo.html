@@ -10,33 +10,20 @@
     
 </head>
 <body>
-    <div class="todo-container">
-        <input type="text" name="name-todo" id="name-todo">
-        <div class="tag-container">
-            <span class="tag">casa</span>
-            <span class="tag">hobby</span>
-            <span class="tag">spesa</span>
-            <span class="tag">lavoro</span>
-            <span class="tag">random</span>
-        </div>
-        <div> <!--elenco priorità come bottoni? -->
-            <h3>Priorità</h3>
-            <span>bassa</span>
-            <span>media</span>
-            <span>alta</span>
-            <span>molto alta</span> 
+    <div class="page-container">
+        <div id="tasks-container">
             
         </div>
+        <button class="add-edit-task" id="add-edit-task" onclick="addTask()">
+        </button>
     </div>
-    <input type="checkbox" id="checkbox-text"> 
-    <label for="checkbox-text" class="label">
-        <div class="temp">#TAG</div>
-    </label>
-    
-     <!-- creare checkbox personale, display: none   -->
 </body>
 <script src="./todo.js"></script>
 </html> 
 
 
-
+<!-- 
+        <input type="checkbox" id="checkbox-text"> 
+        <label for="checkbox-text" class="label">
+            <div class="temp">#TAG</div>
+        </label> -->

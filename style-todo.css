@@ -1,23 +1,176 @@
+*{box-sizing: border-box;}
 
- #checkbox-text{ 
-     display: none; 
-} 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-.label{ 
-    width: 50px; 
-    height: 50px;
-    background-color: rgb(255, 205, 139);
-} 
-
-.temp {
-    width: fit-content;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(206, 206, 206);
-    color: black;
-    border-radius: 2px;
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #303060;
+    font-family: 'Ubuntu', sans-serif;
+    color: #01161E;
 }
 
-#checkbox-text:checked + label  .temp{
-    background-color: rgb(1, 1, 85);
-    color: white;
+.page-container{
+    background-color: #EFF6E0;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    height: 100%;
+    position: relative;
+    padding: 8px;
 }
+
+.task-card{
+    border-radius: 8px;
+    width: 100%;
+    height: fit-content;
+    background-color: #01161E;
+    margin-bottom: 18px;
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    box-shadow: 6px 9px 15px -6px #000000;
+}
+
+.name-container{
+    width: 100%;
+    background-color: #124559;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4px;
+    border-radius:  8px 8px 0px 0px;
+    padding-top: 8px;
+}
+
+#input-name{
+    padding: 12px;
+    color: #EFF6E0;
+    border: none;
+    appearance: none;
+    background-color: transparent;
+    border-radius: 4px;
+    width: 250px;
+    outline: none;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.name-label{
+    position: relative;
+    font-size: 14px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    border: 2px solid #EFF6E0;
+    border-radius: 16px;
+}
+
+.placeholder{
+    position: absolute;
+    left: 93px;
+    top: 20px;
+    transform: translateY(-50%);
+
+    color: #EFF6E0;
+    transition: top 0.3s ease, font-size 0.3s ease,padding 0.3s ease;
+}   
+.name-label input:valid + .placeholder,
+.name-label input:focus + .placeholder{
+    top: 0px;
+    font-size: 10px;
+    background-color: #124559;
+    padding: 0px 4px;
+    left: 95px;
+    content: 'Task name';
+}
+
+.separation-line{
+    height: 2px;
+    width: 100%;
+    background-color: #01161E;
+}
+
+.tags-container{
+    background-color: #598392;
+    min-height: 62px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.checkbox{
+    display: none;
+}
+
+.tag-div{
+    background-color: #01161E;
+    color: #EFF6E0;
+    margin: 8px;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+#checkbox0:checked + label  .tag-div{
+    background-color: #EFF6E0;
+    color: #01161E;
+}
+
+#checkbox1:checked + label  .tag-div{
+    background-color: #EFF6E0;
+    color: #01161E;
+}
+
+#checkbox2:checked + label  .tag-div{
+    background-color: #EFF6E0;
+    color: #01161E;
+}
+
+#checkbox3:checked + label  .tag-div{
+    background-color: #EFF6E0;
+    color: #01161E;
+}
+
+#checkbox4:checked + label  .tag-div{
+    background-color: #EFF6E0;
+    color: #01161E;
+}
+
+.priority-container{
+    min-height: 62px;
+    background-color: #AEC3B0;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+.priority{
+    color: #01161E;
+    margin: 8px;
+    padding: 4px;
+    border-radius: 4px;
+    border: 2px solid #01161E;
+    background-color: transparent;
+}
+
+.add-edit-task{
+    width: 100px;
+    height: 40px;
+    background-color: #AEC3B0;
+    margin: auto;
+    border: 2px solid #01161E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+}
+
