@@ -1,0 +1,23 @@
+
+ #checkbox-text{ 
+     display: none; 
+} 
+
+.label{ 
+    width: 50px; 
+    height: 50px;
+    background-color: rgb(255, 205, 139);
+} 
+
+.temp {
+    width: fit-content;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(206, 206, 206);
+    color: black;
+    border-radius: 2px;
+}
+
+#checkbox-text:checked + label  .temp{
+    background-color: rgb(1, 1, 85);
+    color: white;
+}

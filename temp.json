@@ -3,8 +3,8 @@
         "creationDate": "2022-04-14T12:03:07.276Z",
         "name": "Trovare il sacro Graal",
         "tags": [
-            "gloria eterna",
-            "jesus is love"
+            "casa",
+            "spesa"
         ],
         "priority": 3,
         "id": "2"
@@ -13,7 +13,7 @@
         "creationDate": "2021-08-25T14:49:20.760Z",
         "name": "Pagare bollette",
         "tags": [
-            "spese"
+            "spesa"
         ],
         "priority": 1,
         "id": "3"
@@ -22,13 +22,11 @@
         "creationDate": "2022-01-08T11:57:50.531Z",
         "name": "test",
         "tags": [
-            "test1",
-            "test2",
-            "test3",
-            "test4",
-            "test5",
-            "test6",
-            "test7"
+            "famiglia",
+            "lavoro",
+            "hobby",
+            "casa",
+            "spesa"
         ],
         "priority": 0,
         "id": "4"

@@ -9,7 +9,7 @@ template = `
             </div>
             
             <div class="right-title-container">
-            <button class="edit-button"><img src="./assets/done.svg" height="25" class="svg"></button>
+            <button class="done-button"><img src="./assets/done.svg" height="25" class="svg"></button>
             <button class="edit-button"><img src="./assets/edit.svg" height="25" class="svg"></button>
             <button class="delete-button"><img src="./assets/delete.svg" height="25" class="svg"></button>
         </div>
@@ -69,7 +69,10 @@ function display(tasks) {
         todoCard.innerHTML = content
         const tagsContainer = todoCard.querySelector('.tags-container')
         const deleteButton = todoCard.querySelector('.delete-button');
-        console.log(task);
+        const editButton = todoCard.querySelector('.edit-button')
+        // editButton.onclick = () => goToTodoPageWidhLocalStorage(task)
+        editButton.onclick = () => goToTodoPage(task.id)
+        console.log(task.id);
         deleteButton.onclick = () => confirmDeletion(task.id);
         populateTagContainer(tagsContainer, task.tags)
         taskContainer.appendChild(todoCard)
@@ -134,4 +137,22 @@ function inverArray(){
     toDoList.reverse()
     display(toDoList)
 }
+
+function goToTodoPage(id) {
+    let urlString = './todo.html'
+    if(id){
+        urlString = urlString + '?id=' + id
+    }
+    window.location.href = urlString;
+}
+
+function goToTodoPageWidhLocalStorage(todo){
+    let urlString = './todo.html'
+    if(todo){
+        const todoString = JSON.stringify(todo)
+        sessionStorage.setItem('selectedTodo', todoString)
+    }
+    window.location.href = urlString;
+}
+
 loadTodos()
