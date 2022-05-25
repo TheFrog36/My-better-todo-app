@@ -6,11 +6,11 @@ template = `
     <div class="task-title-container">
         <div class="left-title-container">
             <div class="task-title">#TITLE</div>
-            <button class="edit-button"><img src="./assets/done.svg" height="25"></button>
+            <button class="edit-button"><img src="./assets/done.svg" height="25" class="svg"></button>
         </div>
         <div class="right-title-container">
-            <button class="edit-button"><img src="./assets/edit.svg" height="25"></button>
-            <button class="delete-button"><img src="./assets/delete.svg" height="25"></button>
+            <button class="edit-button"><img src="./assets/edit.svg" height="25" class="svg"></button>
+            <button class="delete-button"><img src="./assets/delete.svg" height="25" class="svg"></button>
         </div>
     </div>
     <div class="separation-line"></div>
