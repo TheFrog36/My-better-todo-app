@@ -170,7 +170,8 @@ function addTask(){
             savedTags.push(arrayPresetTags[i])
     }
     myObj['creationDate'] = new Date().getTime()
-    myObj['name'] = document.getElementById('input-name').value
+    const nameInput = document.getElementById('input-name').value.trim()
+    myObj['name'] = nameInput === '' ? 'Task name': nameInput
     myObj['tags'] = savedTags
     myObj['priority'] = finalPriority
     let myMethod
