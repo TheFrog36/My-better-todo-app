@@ -1,4 +1,4 @@
-const arrayPresetTags = ['spesa','hobby','lavoro','casa','famiglia']
+const arrayPresetTags = ['spesa','hobby','lavoro','casa','famiglia','amici']
 const TODO_URL = 'https://62860d1bf0e8f0bb7c0f4284.mockapi.io/todos'
 const tagTemplate = `
     <input type="checkbox" class="checkbox" id="checkbox#TAGNUMBER">

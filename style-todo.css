@@ -117,12 +117,12 @@ html, body {
     border-radius: 4px;
 }
 
-#checkbox0:checked + label  .tag-div{
+.checkbox:checked + label  .tag-div{
     background-color: #EFF6E0;
     color: #01161E;
 }
 
-#checkbox1:checked + label  .tag-div{
+/* #checkbox1:checked + label  .tag-div{
     background-color: #EFF6E0;
     color: #01161E;
 }
@@ -140,7 +140,7 @@ html, body {
 #checkbox4:checked + label  .tag-div{
     background-color: #EFF6E0;
     color: #01161E;
-}
+} */
 
 .priority-container{
     min-height: 62px;
